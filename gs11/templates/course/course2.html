@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learn Python</title>
+	<style type="text/css">
+		body{
+			background-color: black;
+			color: seashell;
+		}
+	</style>
+</head>
+<body>
+<h1>Time is :{{ dt }}</h1>
+<h1>Date is :{{ dt|date:'D d M Y' }}</h1>
+<h1>Time is :{{ dt|time:'H:i' }}</h1>
+<!-- Predefine Format Date -->
+<h3>Predefine Format</h3>
+<h1>Date is :{{ dt|date:'SHORT_DATE_FORMAT'}}</h1>
+<h1>Time is :{{ dt|time:'TIME_FORMAT'}}</h1>
+</body>
+</html>

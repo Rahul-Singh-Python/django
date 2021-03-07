@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<style type="text/css">
+		.myuser{
+			color: red;
+			background-color: yellow;
+		}
+		.mypass{
+			color: white;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+<!-- <form action="" method="POST" novalidate="">
+	{% csrf_token %}
+	{{form.as_p}}
+<input type="submit" name="" value="Submit">
+</form> -->
+
+<h3>Login Page</h3>
+<form action="" method="POST" novalidate="">
+	{% csrf_token %}
+	{% for fm in form %}
+	<div>
+		{{fm.label_tag}} {{fm}} <span>{{fm.errors|striptags}}</span>
+	</div><br>
+	{% endfor %}
+	<input type="submit" name="" value="Login">
+	{% if form.non_field_errors %}
+		{% for error in form.non_field_errors %}
+			<p>{{error}}</p>
+		{% endfor %}
+	{% endif %}
+</form>
+</body>
+</html>

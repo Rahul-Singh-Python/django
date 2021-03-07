@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Are You Sure</h1>
+<form action="" method="POST">
+	{% csrf_token %}
+	<input type="submit" name="" value="Delete">
+	<a href="{% url 'stucreate' %}">Cancel</a>
+</form>
+</body>
+</html>

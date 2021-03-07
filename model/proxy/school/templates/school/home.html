@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Information</title>
+	<style type="text/css">
+		table,th,tr,td{
+			border: 1px solid black
+		}
+	</style>
+</head>
+<body>
+<table>
+<h3>Exam Center Information Original</h3>
+<th>ID</th>
+<th>Exam Center Name</th>
+<th>Center City</th>
+{% for exam in exams %}
+<tr>
+	<td>{{exam.id}}</td>
+	<td>{{exam.cname}}</td>
+	<td>{{exam.city}}</td>
+</tr>
+{% endfor %}
+</table>
+
+
+
+<table>
+<h3>Exam Center Information Proxy</h3>
+<th>ID</th>
+<th>Exam Center Name</th>
+<th>Center City</th>
+{% for myexam in myexams %}
+<tr>
+	<td>{{myexam.id}}</td>
+	<td>{{myexam.cname}}</td>
+	<td>{{myexam.city}}</td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>

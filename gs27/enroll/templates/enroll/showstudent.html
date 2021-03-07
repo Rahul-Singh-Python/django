@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<style type="text/css">
+		.errorlist{
+			list-style-type: none;
+			color: red;
+			font-size: 15px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.error{
+			
+		}
+	</style>
+</head>
+<body>
+<form action="" method="POST" novalidate>
+	{% csrf_token %}
+	{{form}}
+	<input type="submit" name="" value="submit">
+</form>
+</body>
+</html>

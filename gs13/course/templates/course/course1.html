@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Django</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<h1>{{title}}</h1>
+<h1>{{cname}}</h1>
+<img src="{% static 'images/1.png' %}" alt="Interview" height="300px" width="400px" />
+<img src="{% get_static_prefix %}images/1.png" height="300px" width="400px" alt="Django" />
+<hr>
+<form>
+	<input type="button" name="" value="Click me" onclick="disp()"/>
+</form>
+
+<script type="text/javascript" src="{% static 'js/all.js' %}"></script>
+</body>
+</html>

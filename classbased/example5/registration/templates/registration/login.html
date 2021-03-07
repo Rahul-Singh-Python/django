@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+</head>
+<body>
+<form action="" method="POST" novalidate="">
+	{% csrf_token %}
+	{{form.as_p}}
+	<input type="submit" name="" value="Login">
+	<a href="{% url 'password_reset' %}">Reset Password</a>
+</form>
+</body>
+</html>

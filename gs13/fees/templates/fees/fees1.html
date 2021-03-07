@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Django</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<h1>{{title}}</h1>
+<h1>{{cname}}</h1>
+<h1>{{charge}}</h1>
+<img src="{% static 'images/1.png'%}" height="300px" width="300px" />
+<img src="{% static 'images/2.png'%}" height="300px" width="300px" />
+</body>
+</html>

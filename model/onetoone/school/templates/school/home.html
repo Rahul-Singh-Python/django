@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Information</title>
+	<style type="text/css">
+		table,th,tr,td{
+			border: 1px solid black
+		}
+	</style>
+</head>
+<body>
+<table>
+<h3>Student Information</h3>
+<th>ID</th>
+<th>Student Name</th>
+<th>Roll</th>
+<th>Exam Center Name</th>
+<th>Center City</th>
+{% for student in students %}
+<tr>
+	<td>{{student.id}}</td>
+	<td>{{student.name}}</td>
+	<td>{{student.roll}}</td>
+	<td>{{student.cname}}</td>
+	<td>{{student.city}}</td>
+</tr>
+{% endfor %}
+</table>
+
+
+
+<table>
+<h3>Center Information</h3>
+<th>ID</th>
+<th>Exam Center Name</th>
+<th>Center City</th>
+{% for exam in exams %}
+<tr>
+	<td>{{exam.id}}</td>
+	<td>{{exam.cname}}</td>
+	<td>{{exam.city}}</td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>

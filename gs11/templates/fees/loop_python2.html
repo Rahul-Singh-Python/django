@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loop2</title>
+</head>
+<body>
+	<!-- <h3>{{ student }}</h3>
+	<h3>{{ student.stu1 }}</h3>
+	<h3>{{ student.stu2 }}</h3>
+	<h3>{{ student.stu3 }}</h3>
+	<h3>{{ student.stu1.name }}</h3>
+	<h3>{{ student.stu1.roll }}</h3>
+	<h3>{{ student.stu2.name }}</h3>
+	<h3>{{ student.stu2.roll }}</h3>
+	<h3>{{ student.stu3.name }}</h3>
+	<h3>{{ student.stu3.roll }}</h3>
+	<h3>{{ student.stu4.name }}</h3>
+	<h3>{{ student.stu4.roll }}</h3> -->
+
+	<h1>Nested Forloop</h1>
+	{% for key,value in data.items %}
+	{{key}} = {{value}}<br>
+	{% for k,v in value.items %}
+	{{k}} = {{v}}<br>
+	{% endfor %}
+	{% endfor %}
+
+
+	<h1>Nested Forloop Parent Counter 1</h1>
+	{% for key,value in data.items %}
+	{{key}} = {{value}}<br>
+	{% for k,v in value.items %}
+	{{forloop.parentloop.counter}} {{k}} = {{v}}<br>
+	{% endfor %}
+	{% endfor %}
+
+	<h1>Nested Forloop Parent Counter 0</h1>
+	{% for key,value in data.items %}
+	{{key}} = {{value}}<br>
+	{% for k,v in value.items %}
+	{{forloop.parentloop.counter0}} {{k}} = {{v}}<br>
+	{% endfor %}
+	{% endfor %}
+
+
+
+	<!-- {% for key,value in data.items %}
+	{{key}} = {{value}}<br>
+	{% endfor %} -->
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+<form action="" method="get">
+	<div>
+		<label for="id_name">Name:</label>
+		<input type="text" name="name" required="id_name">
+	</div>
+	<div>
+		<label for="{{form.name.id_for_label}}">Name:</label>
+		{{form.name}}
+	</div>
+	<div>
+		{{form.name.label}}</div><br>
+		{{form.name.value}}</div><br>
+		{{form.name.html_name}}</div><br>
+		{{form.name.help_text}}</div><br>
+		{{form.name.field_required}}</div><br>
+	</div>
+</form>
+</body>
+</html>

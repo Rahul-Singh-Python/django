@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>{% block title %} Other {% endblock title %}</title>
+	<!-- <link rel="stylesheet" type="text/css" href="{% static 'core/css/core.css' %}"> -->
+	<link rel="stylesheet" type="text/css" href="{% static 'core/css/all.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'core/css/bootstrap.css' %}">
+	{% block corecss %}
+	<link rel="stylesheet" type="text/css" href="{% static 'core/css/core.css' %}">
+	{% endblock corecss %}
+</head>
+<body>
+
+{% include 'core/nav.html' %}
+
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<i class="fas fa-air-freshener"></i>
+
+{% block content %} {% endblock content %}
+{% block content1 %} {% endblock content1 %}
+{% block content2 %} {% endblock content2 %}
+
+<script type="text/javascript" src="{% static 'core/js/jquery.js' %}"></script>
+<script type="text/javascript" src="{% static 'core/js/popper.js' %}"></script>
+<script type="text/javascript" src="{% static 'core/js/all.js' %}"></script>
+<script type="text/javascript" src="{% static 'core/js/bootstrap.js' %}"></script>
+</body>
+</html>

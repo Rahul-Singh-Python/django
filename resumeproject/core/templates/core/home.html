@@ -1,0 +1,20 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class="mt-5">
+	<div class="text-center">
+		<img src="{% static 'core/images/3.jpg' %}" alt="ProfilePic" class="img-thumbnail" width="250px" height="150px">	
+	</div>
+	<div class="text-white mt-5 mx-5 text-justify">
+		<h1 class="font-weight-bold st-font">Hello,</h1>
+		<div class="px-4" style="line-height: 2rem;">
+			<p style="text-indent:100px;"> I am <b class="text-warning"> Rahul SIngh</b> Having 1 year of Web-Development and Machine Leraning exprience for <b class="text-warning">IIH GLOBAL</b> , I offer the technical expertise you are seeking for your web developer Position.</p>
+			<p> Since earning my bechelor's degree in internet and web development from VNSGU University, I have serverd as a web development at <b class="text-warning">Gujarat Vidyapith</b> This is my exprience. </p>
+		</div>
+	</div>
+	<div class="text-center">
+		<a href="{% url 'skill' %}" class="btn btn-outline-warning my-3 mr-5 ">Hire Me</a>
+		<a href="{% url 'contact' %}" class="btn btn-outline-info my-3 ">Contact</a>
+	</div>
+</div>			
+{% endblock content %}

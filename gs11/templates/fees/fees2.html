@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fees Python</title>
+</head>
+<body>
+
+<h1>Example 1</h1>
+{% if nm %}
+	<h3>Hello {{ nm }}</h3>
+{% endif %}
+
+<h1>Example 2</h1>
+{% if age %}
+	<h3>Hello {{ age }}</h3>
+{% endif %}
+
+<h1>Example 3</h1>
+{% if aa %}
+	<h3>Hello {{ aa }}</h3>
+{% endif %}
+
+<h1>Example 4</h1>
+{% if nm and st %}
+	<h3>{{st}} seat are availabe for {{nm}} course</h3>
+{% endif %}
+
+<h1>Example 5</h1>
+{% if nm or st %}
+	<h3>{{st}} seat are availabe for {{nm}} course</h3>
+{% endif %}
+
+<h1>Example 6</h1>
+{% if not st %}
+	<h3>Seat Not Availabe</h3>
+{% endif %}
+
+<h1>Example 7</h1>
+{% if nm == 'Django' %}
+	<h3>Hello {{nm}} course</h3>
+{% endif %}
+
+<h1>Example 8</h1>
+{% if nm == 'Django' and st == 5 %}
+	<h3>{{st}} seat are availabe for {{nm}} course</h3>
+{% endif %}
+
+<h1>Example 9</h1>
+{% if nm == 'Django' or st == 6 %}
+	<h3>{{st}} seat are availabe for {{nm}} course</h3>
+{% endif %}
+
+<h1>Example 10</h1>
+{% if not st == 6 %}
+	<h3>Seat is Not Availabe</h3>
+{% endif %}
+
+<h1>Example 11</h1>
+{% if nm|length >= 4 %}
+	<h3>Hello {{nm}}</h3>
+{% endif %}
+
+<h1>Example 12</h1>
+{% if np %}
+	<h3>Hello {{np}}</h3>
+{% else %}
+	<h3>No Course Availabe</h3>
+{% endif %}
+
+<h1>Example 13</h1>
+{% if nm == 'tjango' %}
+	<h3>Hello {{nm}}</h3>
+{% else %}
+	<h3>No Course Availabe</h3>
+{% endif %}
+
+<h1>Example 14</h1>
+{% if nm %}
+	<h3>Hello {{nm}}</h3>
+{% elif st %}
+	<h3>Seats {{st}}</h3>
+{% else %}
+	<h3>No Course Availabe</h3>
+{% endif %}
+
+<h1>Example 15</h1>
+{% if nm == 'Django' %}
+	<h3>Hello {{nm}}</h3>
+{% elif st == 5 %}
+	<h3>Seats {{st}}</h3>
+{% else %}
+	<h3>No Course Availabe</h3>
+{% endif %}
+
+</body>
+</html>

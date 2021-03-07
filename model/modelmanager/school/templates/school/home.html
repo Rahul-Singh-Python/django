@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Information</title>
+	<style type="text/css">
+		table,th,tr,td{
+			border: 1px solid black
+		}
+	</style>
+</head>
+<body>
+<table>
+	<h1>Student Information</h1>
+	<th>ID</th>
+	<th>Name</th>
+	<th>Roll</th>
+	{% for student in students %}
+	<tr>
+		<td>{{student.id}}</td>
+		<td>{{student.name}}</td>
+		<td>{{student.roll}}</td>
+	</tr>
+	{% endfor %}
+</table>
+</body>
+</html>
